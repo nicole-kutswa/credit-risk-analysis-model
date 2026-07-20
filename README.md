@@ -97,7 +97,7 @@ The processed dataset supplied to the model consists of 8 key predictor variable
 | **Credit amount** | Numeric | Pass-through |
 | **Duration** | Numeric | Pass-through (months) |
 
-## 📊 Model Evaluation & Performance
+##  Model Evaluation & Performance
 
 The **XGBoost Classifier** was evaluated on a held-out test set to assess its ability to differentiate between "Good" and "Bad" credit risks. Because predicting credit risk involves balancing loan approval rates against potential defaults, the model was evaluated across multiple classification metrics.
 
