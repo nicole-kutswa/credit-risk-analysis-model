@@ -105,9 +105,44 @@ The **XGBoost Classifier** was evaluated on a held-out test set to assess its ab
 
 | Metric | Score | Business Meaning |
 | :--- | :--- | :--- |
-| **Accuracy** | ~78% | The overall percentage of credit risk predictions the model got right. |
+| **Accuracy** | ~72% | The overall percentage of credit risk predictions the model got right. |
 
+## Business Recommendations
 
+Based on the feature importance and predictive behavior of the credit risk model, the following strategic recommendations are advised for credit risk management and underwriting teams:
+
+### 1. Implement Tiered Approval Workflows (Automated vs. Manual Review)
+* **Low-Risk Applicants (High Model Confidence):** Automate instant approvals for low-risk profiles (e.g., homeowners with moderate-to-rich checking balances requesting short-term loans under 18 months).
+* **Borderline Profiles:** Route applicants flagged as "Bad Risk" who fall near the decision boundary to human underwriters for secondary review rather than outright rejection.
+
+### 2. Require Collateral or Guarantors for High-Risk Markers
+* **Short Checking History & Low Balances:** Since checking account status proved to be a primary indicator of default, applicants with little or no checking balance should be required to provide a co-signer, proof of steady income, or collateral to mitigate credit exposure.
+* **Non-Homeowners:** Offer adjusted interest rates or lower maximum credit caps for applicants in rented or free housing to balance portfolio risk.
+
+### 3. Cap Unsecured Loan Durations
+* Credit risk increases significantly for loan terms extending past **24 months**. To minimize long-term default exposure:
+  * Limit uncollateralized loans to a maximum duration of 12–18 months for first-time or younger applicants.
+  * Require higher down payments on larger credit amounts when the requested duration exceeds 2 years.
+
+### 4. Dynamic Pricing & Risk-Based Interest Rates
+* Instead of a binary "Approve/Reject" policy, leverage the model's underlying probability output to implement **Risk-Based Pricing**:
+  * **Good Credit Profiles:** Offer competitive, lower interest rates to attract high-value borrowers.
+  * **Moderate/Higher Risk Profiles:** Apply higher interest margins or risk premiums to offset the statistical probability of default.
+
+---
+
+## Connect & Contact
+
+<div align="center">
+
+Developed with love by **Nicole Kutswa**
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nicole-omitsi)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/nicole-kutswa)
+
+*Feel free to reach out for collaborations, feedback, or data science discussions!*
+
+</div>
 
 
 
